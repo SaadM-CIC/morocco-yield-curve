@@ -1,0 +1,382 @@
+﻿=== SOURCING utils_loadings.R ===
+Rscript.exe : 
+Au caractère Ligne:1 : 93
++ ... TTP_PROXY); & "C:\Program Files\R\R-4.5.2\bin\Rscript.exe" scripts/ru ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Attachement du package : 'dplyr'
+
+Les objets suivants sont masqu├®s depuis 'package:stats':
+
+    filter, lag
+
+Les objets suivants sont masqu├®s depuis 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Rows: 8514 Columns: 4
+ÔöÇÔöÇ Column specification ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔ
+öÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+Delimiter: ";"
+dbl  (3): maturite_jours, maturite_annees, taux_zc
+date (1): date_courbe
+
+Ôä╣ Use `spec()` to retrieve the full column specification for this data.
+Ôä╣ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+           level     slope   curvature
+mat_0.249      1 0.9925011 0.007461311
+mat_0.498      1 0.9850771 0.014773698
+mat_0.997      1 0.9704504 0.028961691
+mat_0.999      1 0.9703708 0.029038065
+mat_1.999      1 0.9419063 0.055798976
+mat_2.998      1 0.9145551 0.080433253
+mat_4          1 0.8881976 0.103141436
+mat_4.999      1 0.8629311 0.123931966
+mat_5.999      1 0.8386375 0.142993453
+mat_6.998      1 0.8152745 0.160442004
+mat_8          1 0.7927413 0.176428116
+mat_8.999      1 0.7711224 0.190966572
+mat_9.999      1 0.7503182 0.204198506
+mat_10.998     1 0.7302936 0.216213312
+mat_12         1 0.7109635 0.227123031
+mat_12.999     1 0.6924015 0.236946602
+mat_13.999     1 0.6745233 0.245788716
+mat_14.998     1 0.6573000 0.253718049
+mat_16         1 0.6406591 0.260817166
+mat_16.999     1 0.6246652 0.267107550
+mat_17.999     1 0.6092467 0.272665992
+mat_18.998     1 0.5943796 0.277545119
+mat_20         1 0.5800022 0.281804969
+mat_20.999     1 0.5661713 0.285468391
+mat_21.999     1 0.5528257 0.288590885
+mat_22.998     1 0.5399455 0.291212662
+mat_24         1 0.5274782 0.293376609
+mat_24.999     1 0.5154736 0.295106087
+mat_25.999     1 0.5038796 0.296440412
+mat_26.998     1 0.4926795 0.297410203
+mat_28         1 0.4818283 0.298045344
+mat_28.999     1 0.4713700 0.298369103
+mat_29.999     1 0.4612599 0.298408553
+Message d'avis :
+le package 'readr' a ├®t├® compil├® avec la version R 4.5.3 
+=== SOURCING 01_data_import.R ===
+Rows: 258 Columns: 5
+ÔöÇÔöÇ Column specification ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔ
+öÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+Delimiter: ";"
+dbl  (4): beta0, beta1, beta2, rmse
+date (1): date_courbe
+
+Ôä╣ Use `spec()` to retrieve the full column specification for this data.
+Ôä╣ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+spc_tbl_ [258 ├ù 5] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ date_courbe: Date[1:258], format: "2005-01-31" "2005-02-28" ...
+ $ beta0      : num [1:258] 3.62 5.51 5.42 5.65 5.89 ...
+ $ beta1      : num [1:258] -1.35 -3.16 -3.14 -3.32 -3.57 ...
+ $ beta2      : num [1:258] 12.25 9.5 9.38 8.87 8.49 ...
+ $ rmse       : num [1:258] 0.132 0.179 0.177 0.179 0.185 ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   date_courbe = col_date(format = ""),
+  ..   beta0 = col_double(),
+  ..   beta1 = col_double(),
+  ..   beta2 = col_double(),
+  ..   rmse = col_double()
+  .. )
+ - attr(*, "problems")=<externalptr> 
+
+=== SOURCING 02_stationarity.R ===
+
+=== SOURCING 03_lag_selection.R ===
+Le chargement a n├®cessit├® le package : MASS
+
+Attachement du package : 'MASS'
+
+L'objet suivant est masqu├® depuis 'package:dplyr':
+
+    select
+
+Le chargement a n├®cessit├® le package : strucchange
+Le chargement a n├®cessit├® le package : zoo
+
+Attachement du package : 'zoo'
+
+Les objets suivants sont masqu├®s depuis 'package:base':
+
+    as.Date, as.Date.numeric
+
+Le chargement a n├®cessit├® le package : sandwich
+Le chargement a n├®cessit├® le package : lmtest
+AIC(n)  HQ(n)  SC(n) FPE(n) 
+     3      1      1      3 
+                  1            2            3            4            5
+AIC(n) -4.939450319 -4.947377465 -5.013400913 -4.975215372 -4.951912493
+HQ(n)  -4.870599881 -4.826889197 -4.841274817 -4.751451447 -4.676510739
+SC(n)  -4.768458537 -4.648141846 -4.585921457 -4.419492080 -4.267945364
+FPE(n)  0.007158594  0.007102337  0.006649149  0.006909074  0.007073776
+                  6            7            8            9           10
+AIC(n) -4.929072250 -4.901884648 -4.899371793 -4.859629525 -4.811911852
+HQ(n)  -4.602032668 -4.523207237 -4.469056554 -4.377676457 -4.278320955
+SC(n)  -4.116861284 -3.961429845 -3.830673154 -3.662687050 -3.486725540
+FPE(n)  0.007239903  0.007443253  0.007467018  0.007776435  0.008165225
+                 11           12
+AIC(n) -4.790081579 -4.754396560
+HQ(n)  -4.204852854 -4.117530005
+SC(n)  -3.336651430 -3.172722574
+FPE(n)  0.008356297  0.008673372
+Messages d'avis :
+1: le package 'vars' a ├®t├® compil├® avec la version R 4.5.3 
+2: le package 'strucchange' a ├®t├® compil├® avec la version R 4.5.3 
+3: le package 'sandwich' a ├®t├® compil├® avec la version R 4.5.3 
+
+=== SOURCING 04_johansen.R ===
+
+=== SOURCING 05_vecm_estimation.R ===
+               ect1
+beta0.l1  1.0000000
+beta1.l1 -0.6331341
+beta2.l1  0.9908782
+constant -8.3091338
+
+=== SOURCING 06_diagnostics.R ===
+
+=== SOURCING 07_forecast.R ===
+Fen├¬tre initiale retenue : 180 mois ( 15 ans ), avec 67 origines de test
+'data.frame':	26532 obs. of  4 variables:
+ $ origin  : int  180 180 180 180 180 180 180 180 180 180 ...
+ $ horizon : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ maturite: num  0.249 0.498 0.997 0.999 1.999 ...
+ $ erreur  : num  -0.0524 -0.0597 -0.0696 -0.0696 -0.0791 ...
+# A tibble: 12 ├ù 4
+   horizon mean_error sd_error  rmse
+     <int>      <dbl>    <dbl> <dbl>
+ 1       1    -0.0388    0.199 0.202
+ 2       2    -0.0385    0.274 0.276
+ 3       3    -0.0364    0.350 0.352
+ 4       4    -0.0355    0.413 0.414
+ 5       5    -0.0360    0.491 0.492
+ 6       6    -0.0360    0.550 0.551
+ 7       7    -0.0441    0.610 0.611
+ 8       8    -0.0510    0.669 0.671
+ 9       9    -0.0610    0.725 0.727
+10      10    -0.0697    0.777 0.780
+11      11    -0.0783    0.822 0.825
+12      12    -0.0862    0.860 0.864
+
+=== SOURCING 08_backtest_var.R ===
+'data.frame':	26532 obs. of  4 variables:
+ $ origin  : int  180 180 180 180 180 180 180 180 180 180 ...
+ $ horizon : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ maturite: num  0.249 0.498 0.997 0.999 1.999 ...
+ $ erreur  : num  -0.00894 -0.01467 -0.02158 -0.0216 -0.02588 ...
+# A tibble: 12 ├ù 4
+   horizon mean_error sd_error  rmse
+     <int>      <dbl>    <dbl> <dbl>
+ 1       1    -0.0430    0.201 0.206
+ 2       2    -0.0471    0.286 0.290
+ 3       3    -0.0513    0.370 0.373
+ 4       4    -0.0563    0.439 0.442
+ 5       5    -0.0626    0.513 0.517
+ 6       6    -0.0680    0.574 0.578
+ 7       7    -0.0808    0.631 0.636
+ 8       8    -0.0919    0.687 0.693
+ 9       9    -0.106     0.740 0.747
+10      10    -0.117     0.788 0.797
+11      11    -0.128     0.832 0.841
+12      12    -0.138     0.872 0.883
+
+=== SOURCING 09_backtest_kalman.R ===
+Le chargement a n├®cessit├® le package : Matrix
+
+Attachement du package : 'Matrix'
+
+Les objets suivants sont masqu├®s depuis 'package:tidyr':
+
+    expand, pack, unpack
+
+L'objet suivant est masqu├® depuis 'package:dlm':
+
+    bdiag
+
+
+Attachement du package : 'expm'
+
+L'objet suivant est masqu├® depuis 'package:Matrix':
+
+    expm
+
+
+Lancement du Backtest DNS-Kalman (M├®thode 2-Step)...
+-> [Origin t = 180 / 246] Calibrating and Filtering...
+-> [Origin t = 181 / 246] Calibrating and Filtering...
+-> [Origin t = 182 / 246] Calibrating and Filtering...
+-> [Origin t = 183 / 246] Calibrating and Filtering...
+-> [Origin t = 184 / 246] Calibrating and Filtering...
+-> [Origin t = 185 / 246] Calibrating and Filtering...
+-> [Origin t = 186 / 246] Calibrating and Filtering...
+-> [Origin t = 187 / 246] Calibrating and Filtering...
+-> [Origin t = 188 / 246] Calibrating and Filtering...
+-> [Origin t = 189 / 246] Calibrating and Filtering...
+-> [Origin t = 190 / 246] Calibrating and Filtering...
+-> [Origin t = 191 / 246] Calibrating and Filtering...
+-> [Origin t = 192 / 246] Calibrating and Filtering...
+-> [Origin t = 193 / 246] Calibrating and Filtering...
+-> [Origin t = 194 / 246] Calibrating and Filtering...
+-> [Origin t = 195 / 246] Calibrating and Filtering...
+-> [Origin t = 196 / 246] Calibrating and Filtering...
+-> [Origin t = 197 / 246] Calibrating and Filtering...
+-> [Origin t = 198 / 246] Calibrating and Filtering...
+-> [Origin t = 199 / 246] Calibrating and Filtering...
+-> [Origin t = 200 / 246] Calibrating and Filtering...
+-> [Origin t = 201 / 246] Calibrating and Filtering...
+-> [Origin t = 202 / 246] Calibrating and Filtering...
+-> [Origin t = 203 / 246] Calibrating and Filtering...
+-> [Origin t = 204 / 246] Calibrating and Filtering...
+-> [Origin t = 205 / 246] Calibrating and Filtering...
+-> [Origin t = 206 / 246] Calibrating and Filtering...
+-> [Origin t = 207 / 246] Calibrating and Filtering...
+-> [Origin t = 208 / 246] Calibrating and Filtering...
+-> [Origin t = 209 / 246] Calibrating and Filtering...
+-> [Origin t = 210 / 246] Calibrating and Filtering...
+-> [Origin t = 211 / 246] Calibrating and Filtering...
+-> [Origin t = 212 / 246] Calibrating and Filtering...
+-> [Origin t = 213 / 246] Calibrating and Filtering...
+-> [Origin t = 214 / 246] Calibrating and Filtering...
+-> [Origin t = 215 / 246] Calibrating and Filtering...
+-> [Origin t = 216 / 246] Calibrating and Filtering...
+-> [Origin t = 217 / 246] Calibrating and Filtering...
+-> [Origin t = 218 / 246] Calibrating and Filtering...
+-> [Origin t = 219 / 246] Calibrating and Filtering...
+-> [Origin t = 220 / 246] Calibrating and Filtering...
+-> [Origin t = 221 / 246] Calibrating and Filtering...
+-> [Origin t = 222 / 246] Calibrating and Filtering...
+-> [Origin t = 223 / 246] Calibrating and Filtering...
+-> [Origin t = 224 / 246] Calibrating and Filtering...
+-> [Origin t = 225 / 246] Calibrating and Filtering...
+-> [Origin t = 226 / 246] Calibrating and Filtering...
+-> [Origin t = 227 / 246] Calibrating and Filtering...
+-> [Origin t = 228 / 246] Calibrating and Filtering...
+-> [Origin t = 229 / 246] Calibrating and Filtering...
+-> [Origin t = 230 / 246] Calibrating and Filtering...
+-> [Origin t = 231 / 246] Calibrating and Filtering...
+-> [Origin t = 232 / 246] Calibrating and Filtering...
+-> [Origin t = 233 / 246] Calibrating and Filtering...
+-> [Origin t = 234 / 246] Calibrating and Filtering...
+-> [Origin t = 235 / 246] Calibrating and Filtering...
+-> [Origin t = 236 / 246] Calibrating and Filtering...
+-> [Origin t = 237 / 246] Calibrating and Filtering...
+-> [Origin t = 238 / 246] Calibrating and Filtering...
+-> [Origin t = 239 / 246] Calibrating and Filtering...
+-> [Origin t = 240 / 246] Calibrating and Filtering...
+-> [Origin t = 241 / 246] Calibrating and Filtering...
+-> [Origin t = 242 / 246] Calibrating and Filtering...
+-> [Origin t = 243 / 246] Calibrating and Filtering...
+-> [Origin t = 244 / 246] Calibrating and Filtering...
+-> [Origin t = 245 / 246] Calibrating and Filtering...
+-> [Origin t = 246 / 246] Calibrating and Filtering...
+
+Temps total d'ex├®cution : 4.99 secondes.
+
+=== PERFORMANCES DNS-KALMAN (RMSE par horizon) ===
+# A tibble: 12 ├ù 4
+   horizon mean_error sd_error  rmse
+     <int>      <dbl>    <dbl> <dbl>
+ 1       1   -0.00532    0.207 0.207
+ 2       2   -0.0101     0.297 0.297
+ 3       3   -0.0149     0.386 0.387
+ 4       4   -0.0205     0.466 0.466
+ 5       5   -0.0274     0.546 0.547
+ 6       6   -0.0336     0.615 0.616
+ 7       7   -0.0473     0.680 0.682
+ 8       8   -0.0594     0.744 0.746
+ 9       9   -0.0741     0.805 0.808
+10      10   -0.0871     0.860 0.865
+11      11   -0.0995     0.911 0.916
+12      12   -0.111      0.957 0.964
+Messages d'avis :
+1: le package 'dlm' a ├®t├® compil├® avec la version R 4.5.3 
+2: le package 'tidyr' a ├®t├® compil├® avec la version R 4.5.3 
+3: le package 'expm' a ├®t├® compil├® avec la version R 4.5.3 
+
+=== SOURCING 10_comparison.R ===
+
+Attachement du package : 'ggplot2'
+
+L'objet suivant est masqu├® depuis 'package:dlm':
+
+    %+%
+
+# A tibble: 36 ├ù 5
+   model               horizon mean_error sd_error  rmse
+   <chr>                 <int>      <dbl>    <dbl> <dbl>
+ 1 DNS-Kalman (2-step)       1   -0.00532    0.207 0.207
+ 2 VAR                       1   -0.0430     0.201 0.206
+ 3 VECM                      1   -0.0388     0.199 0.202
+ 4 DNS-Kalman (2-step)       2   -0.0101     0.297 0.297
+ 5 VAR                       2   -0.0471     0.286 0.290
+ 6 VECM                      2   -0.0385     0.274 0.276
+ 7 DNS-Kalman (2-step)       3   -0.0149     0.386 0.387
+ 8 VAR                       3   -0.0513     0.370 0.373
+ 9 VECM                      3   -0.0364     0.350 0.352
+10 DNS-Kalman (2-step)       4   -0.0205     0.466 0.466
+11 VAR                       4   -0.0563     0.439 0.442
+12 VECM                      4   -0.0355     0.413 0.414
+13 DNS-Kalman (2-step)       5   -0.0274     0.546 0.547
+14 VAR                       5   -0.0626     0.513 0.517
+15 VECM                      5   -0.0360     0.491 0.492
+16 DNS-Kalman (2-step)       6   -0.0336     0.615 0.616
+17 VAR                       6   -0.0680     0.574 0.578
+18 VECM                      6   -0.0360     0.550 0.551
+19 DNS-Kalman (2-step)       7   -0.0473     0.680 0.682
+20 VAR                       7   -0.0808     0.631 0.636
+21 VECM                      7   -0.0441     0.610 0.611
+22 DNS-Kalman (2-step)       8   -0.0594     0.744 0.746
+23 VAR                       8   -0.0919     0.687 0.693
+24 VECM                      8   -0.0510     0.669 0.671
+25 DNS-Kalman (2-step)       9   -0.0741     0.805 0.808
+26 VAR                       9   -0.106      0.740 0.747
+27 VECM                      9   -0.0610     0.725 0.727
+28 DNS-Kalman (2-step)      10   -0.0871     0.860 0.865
+29 VAR                      10   -0.117      0.788 0.797
+30 VECM                     10   -0.0697     0.777 0.780
+31 DNS-Kalman (2-step)      11   -0.0995     0.911 0.916
+32 VAR                      11   -0.128      0.832 0.841
+33 VECM                     11   -0.0783     0.822 0.825
+34 DNS-Kalman (2-step)      12   -0.111      0.957 0.964
+35 VAR                      12   -0.138      0.872 0.883
+36 VECM                     12   -0.0862     0.860 0.864
+# A tibble: 12 ├ù 4
+   horizon `DNS-Kalman (2-step)`   VAR  VECM
+     <int>                 <dbl> <dbl> <dbl>
+ 1       1                 0.207 0.206 0.202
+ 2       2                 0.297 0.290 0.276
+ 3       3                 0.387 0.373 0.352
+ 4       4                 0.466 0.442 0.414
+ 5       5                 0.547 0.517 0.492
+ 6       6                 0.616 0.578 0.551
+ 7       7                 0.682 0.636 0.611
+ 8       8                 0.746 0.693 0.671
+ 9       9                 0.808 0.747 0.727
+10      10                 0.865 0.797 0.780
+11      11                 0.916 0.841 0.825
+12      12                 0.964 0.883 0.864
+# A tibble: 12 ├ù 3
+# Groups:   horizon [12]
+   horizon model  rmse
+     <int> <chr> <dbl>
+ 1       1 VECM  0.202
+ 2       2 VECM  0.276
+ 3       3 VECM  0.352
+ 4       4 VECM  0.414
+ 5       5 VECM  0.492
+ 6       6 VECM  0.551
+ 7       7 VECM  0.611
+ 8       8 VECM  0.671
+ 9       9 VECM  0.727
+10      10 VECM  0.780
+11      11 VECM  0.825
+12      12 VECM  0.864
+
+=== PIPELINE COMPLETE ===

@@ -1,0 +1,26 @@
+{
+    "id": "C00F8431",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/03_lag_selection.R",
+    "project_path": "R/vecm/03_lag_selection.R",
+    "type": "r_source",
+    "hash": "4041540034",
+    "contents": "",
+    "dirty": false,
+    "created": 1785696197972.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "11,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785685792,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785685792,
+    "read_only": false,
+    "read_only_alternatives": []
+}

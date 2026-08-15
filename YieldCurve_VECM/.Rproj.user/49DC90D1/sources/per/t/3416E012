@@ -1,0 +1,26 @@
+{
+    "id": "3416E012",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/01_data_import.R",
+    "project_path": "R/vecm/01_data_import.R",
+    "type": "r_source",
+    "hash": "3920877568",
+    "contents": "",
+    "dirty": false,
+    "created": 1785677735953.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "21,0",
+        "scrollLine": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1786034184,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1786034184812,
+    "read_only": false,
+    "read_only_alternatives": []
+}

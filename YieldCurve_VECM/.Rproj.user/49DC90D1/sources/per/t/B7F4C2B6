@@ -1,0 +1,26 @@
+{
+    "id": "B7F4C2B6",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/utils_loadings.R",
+    "project_path": "R/vecm/utils_loadings.R",
+    "type": "r_source",
+    "hash": "3791450801",
+    "contents": "",
+    "dirty": false,
+    "created": 1785682235297.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,14",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785699823,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785699823565,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+.venv/
+.streamlit/
+dist/
+build/
+*.spec
+*.zip
+*.dll
+*.pyd
+*.exe
+.gemini/

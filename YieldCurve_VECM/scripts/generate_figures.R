@@ -1,0 +1,5 @@
+setwd("c:/Users/Saad/Documents/YieldCurve_VECM")
+source("scripts/run_vecm_pipeline.R")
+cat("=== SOURCING figures.R ===\n")
+source("R/vecm/figures.R")
+cat("=== FIGURES GENERATED ===\n")

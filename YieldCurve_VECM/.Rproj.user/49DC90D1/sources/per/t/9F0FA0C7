@@ -1,0 +1,26 @@
+{
+    "id": "9F0FA0C7",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/08_backtest_var.R",
+    "project_path": "R/vecm/08_backtest_var.R",
+    "type": "r_source",
+    "hash": "3614186736",
+    "contents": "",
+    "dirty": false,
+    "created": 1785683618510.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "54,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785699869,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785699869780,
+    "read_only": false,
+    "read_only_alternatives": []
+}

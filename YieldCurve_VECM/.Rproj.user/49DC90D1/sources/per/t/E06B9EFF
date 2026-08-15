@@ -1,0 +1,26 @@
+{
+    "id": "E06B9EFF",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/04_johansen.R",
+    "project_path": "R/vecm/04_johansen.R",
+    "type": "r_source",
+    "hash": "1823720386",
+    "contents": "",
+    "dirty": false,
+    "created": 1785678708182.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "6,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785685790,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785685790582,
+    "read_only": false,
+    "read_only_alternatives": []
+}

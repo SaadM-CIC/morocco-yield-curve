@@ -1,0 +1,26 @@
+{
+    "id": "AE34C8B5",
+    "path": "C:/Users/Saad/Desktop/dns-morocco/YieldCurve_VECM/R/vecm/02_stationarity.R",
+    "project_path": "R/vecm/02_stationarity.R",
+    "type": "r_source",
+    "hash": "329233608",
+    "contents": "",
+    "dirty": false,
+    "created": 1785677886579.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "23,0",
+        "scrollLine": "2"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1785685794,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1785685794215,
+    "read_only": false,
+    "read_only_alternatives": []
+}
