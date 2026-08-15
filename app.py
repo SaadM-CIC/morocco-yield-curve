@@ -165,7 +165,7 @@ if page == "🏠 Accueil (Market Snapshot)":
     # Load latest curve for snapshot
     try:
         project_root = os.path.dirname(os.path.abspath(__file__))
-        zc_path = os.path.join(project_root, "YieldCurve_VECM", "data", "processed", "zc_timeseries.csv")
+        zc_path = os.path.join(project_root, "data", "zc_timeseries.csv")
         df_zc = pd.read_csv(zc_path, sep=";")
         last_date = df_zc['date_courbe'].max()
         df_last = df_zc[df_zc['date_courbe'] == last_date]
@@ -232,7 +232,7 @@ elif page == "📈 CURVE ANALYTICS : Visualisation":
     st.write("Visualisation historique et structure par terme des taux.")
     
     try:
-        df_zc = pd.read_csv("YieldCurve_VECM/data/processed/zc_timeseries.csv", sep=";")
+        df_zc = pd.read_csv("data/zc_timeseries.csv", sep=";")
         last_date = df_zc['date_courbe'].max()
         st.info(f"Dernière courbe disponible : {last_date}")
         
