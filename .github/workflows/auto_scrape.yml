@@ -1,0 +1,41 @@
+name: Automation Scraping BAM
+
+on:
+  schedule:
+    # S'exécute tous les jours à 20h00 UTC
+    - cron: '0 20 * * *'
+  workflow_dispatch: # Permet aussi de lancer l'action manuellement depuis GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  scrape_and_update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
+
+      - name: Configuration de Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Installation des dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Lancement de l'actualisation des données
+        run: |
+          python -c "import sys, os; sys.path.append(os.path.abspath('backend')); from data_pipeline import run_update_pipeline; run_update_pipeline()"
+
+      - name: Sauvegarde et envoi des nouvelles données
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Auto-Update: Scraping des nouvelles données BAM"
+          file_pattern: "data/*.csv data/*/*.csv"
+          commit_user_name: "BAM Scraper Bot"
+          commit_user_email: "actions@github.com"
